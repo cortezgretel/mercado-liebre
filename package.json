@@ -1,16 +1,26 @@
 {
   "name": "mercado-liebre",
   "version": "1.0.0",
-  "description": "",
+  "description": "Ejercitación \"mercado liebre\" Digital House (Modulo 4)",
   "main": "app.js",
   "scripts": {
+    "build": "webpack --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Gretel Cortes",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.8",
     "express": "^4.18.1",
     "normalize.css": "^8.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cortezgretel/mercado-liebre.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cortezgretel/mercado-liebre/issues"
+  },
+  "homepage": "https://github.com/cortezgretel/mercado-liebre#readme"
 }

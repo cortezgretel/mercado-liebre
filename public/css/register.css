@@ -1,0 +1,50 @@
+.main {
+    width: 90%;
+    margin: auto;
+}
+.main .formulario-register div{
+    width: 100%;
+    margin: 20px 0;
+}
+.main .formulario-register div label{
+    width: 100%;
+}
+.main .formulario-register .campo input {
+    width: 100%;
+    height: 30px;
+}
+.info-extra {
+    width: 100%;
+}
+.info-extra label div {
+    width: 100%;
+    display: flex;
+}
+.info-extra label div input {
+    margin-top: 0;
+    margin-right: 10px;
+}
+.intereses {
+    width: 100%;
+}
+.intereses label div div input {
+    margin-right: 10px;
+}
+.main .formulario-register .buttons .reset {
+    background-color: hsl(214, 86%, 42%);
+    border: 1px solid hsl(214, 86%, 42%);
+    color: #ffffff
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 769px) {
+    .main .formulario-register div button {
+        width: 95%;
+    }
+    .main .formulario-register .buttons {
+        display: flex;
+    }
+    .intereses .buttons {
+        text-align: center;
+    }
+}

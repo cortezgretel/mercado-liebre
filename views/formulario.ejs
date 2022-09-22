@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset= "UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <script src="https://kit.fontawesome.com/acf94df91d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class = "main-header-top-bar">
+            <img src="/images/logo-mercado-liebre.svg" class="logo" alt="">
+            <h2 class="copy-header">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                Comprá en cuotas y sin tarjeta de crédito
+            </h2>
+        </div>
+        <a href="#" class="hamburguer-button">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+        <nav class = "main-navbar">
+            <ul class="left-navbar">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#"> Ayuda</a></li>
+            </ul>
+
+            <ul class="right-navbar">
+                <li><a href="#">
+                    Creá tu cuenta
+                    <i class="fa-solid fa-address-card"></i>
+                </a></li>
+                <li><a href="#">
+                    Ingresá
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                </a></li>
+                <li><a href="#">
+                    Mis compras
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Formulario-->
+    <form action="/crear-producto" method="POST" class="create-form">
+        <!--Nombre producto-->
+        <div class="control-formulario">
+            <label for="nombre-producto">
+                Nombre del producto:
+            </label>
+            <input type="text" name="nombre-producto" id="nombre-producto" class="control">
+        </div>
+        <!--Precio producto-->
+        <div class="control-formulario">
+            <label for="precio-producto">
+                Precio del producto:
+            </label>
+            <input type="number" name="precio-producto" id="precio-producto" placeholder="0.0" class="control">
+        </div>
+         <!--Categoria-->
+         <div class="control-formulario">
+            <label for="categoria-producto">
+                Categoría del producto:
+            </label>
+            <select name="categoria-producto" id="categoria-producto" class="control">
+                <option value="hogar">Hogar</option>
+                <option value="electronica">Electronica</option>
+                <option value="belleza">Belleza</option>
+            </select>   
+        </div>
+         <!--Ciudad-->
+         <div class="control-formulario">
+            <label for="ciudad-producto">
+                Ciudad:
+            </label>
+            <select name="ciudad-producto" id="ciudad-producto" class="control">
+                <option value="buenos-aires">Buenos Aires</option>
+                <option value="rosario">Rosario</option>
+                <option value="mendoza">Mendoza</option>
+            </select>   
+        </div>
+        <!--Descripcion del producto-->
+        <div class="control-formulario">
+            <label for="Descripcion-producto">Descripcion del producto</label>
+            <textarea name="descripcion-producto" id="descripcion-producto" class="control"></textarea>
+        </div>
+        <!--¿en Oferta?-->
+        <div class="control-formulario">
+            <label for="Oferta">
+                ¿Esta en oferta?
+            </label>
+            <input type="radio" name="enOferta" id="Oferta" value="si">si
+            <input type="radio" name="enOferta" id="Oferta" value="no">no
+        </div>
+
+        <button type="submit" class="button-form">Guardar</button>
+        <button type="reset" class="button-form">Limpiar</button>
+        
+    </form>
+    <main></main>
+    <footer></footer>
+</body>
+</html>
